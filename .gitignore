@@ -46,6 +46,7 @@ Temporary Items
 bin/
 gen/
 .metadata/
+RemoteSystemsTempFiles/
 .gitattributes
 
 # Built application files

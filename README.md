@@ -1,11 +1,13 @@
 # android-h264-stream-demo
 
+## What it does
 This is an example project to show how to streaming from android camera to 
 VLC or gstreamer.
 
 This demo project use MediaCodec API to encode H.264 data
 and simply wrap with UDP packet then send these packets to VLC or gstreamer.
- 
+
+## How does it work 
 The working flow as below
 camera preview data(YV12) -> YUV420sp -> MediaCodec -> H.264 data -> UDP 
 
@@ -30,7 +32,7 @@ gst-launch udpsrc port=<port> ! video/x-h264,width=<w>,height=<h>,framerate=<fra
 ## License
 ```
 Copyright (C) 2015 Ping-Chun Tseng <lucas.pctseng@gmail.com> 
-Licensed under LGPLv2.1 or later
+Licensed under Apache 2.0
 ```
 
 ## Notes
