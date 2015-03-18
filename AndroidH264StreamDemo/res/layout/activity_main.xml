@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context="com.jemi.androidh264streamdemo.MainActivity" >
+
+    <SurfaceView 
+        android:id="@+id/svCameraPreview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+    </SurfaceView>
+    
+    <Button
+        android:id="@+id/btnStream"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" 
+        android:background="@android:color/white"       
+        android:text="Stream" />
+        
+    <Button
+        android:id="@+id/btnCamSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"  
+        android:background="@android:color/white"             
+        android:text="Camera Size" />
+
+</RelativeLayout>
