@@ -1,4 +1,4 @@
-# AndroidH264StreamDemo
+# android-h264-stream-demo
 
 This is an example project to show how to streaming from android camera to 
 VLC or gstreamer.
