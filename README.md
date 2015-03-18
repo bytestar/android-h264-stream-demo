@@ -9,7 +9,9 @@ and simply wrap with UDP packet then send these packets to VLC or gstreamer.
 
 ## How does it work 
 The working flow as below
+```
 camera preview data(YV12) -> YUV420sp -> MediaCodec -> H.264 data -> UDP 
+```
 
 ## Media Server
 
