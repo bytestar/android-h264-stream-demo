@@ -46,7 +46,7 @@ Temporary Items
 bin/
 gen/
 .metadata/
-
+.gitattributes
 
 # Built application files
 *.apk
