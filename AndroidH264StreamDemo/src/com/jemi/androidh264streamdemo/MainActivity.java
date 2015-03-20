@@ -50,6 +50,7 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback, Pr
 	AvcEncoder encoder;
 	DatagramSocket udpSocket;
 	InetAddress address;
+	int port;
 	ArrayList<byte[]> encDataList = new ArrayList<byte[]>();
 	ArrayList<Integer> encDataLengthList = new ArrayList<Integer>();
 	
@@ -82,7 +83,7 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback, Pr
 				}
 		        try 
 		        {         
-		        	DatagramPacket packet = new DatagramPacket(encData, encData.length, address, 5000);  
+		        	DatagramPacket packet = new DatagramPacket(encData, encData.length, address, port);  
 		            udpSocket.send(packet);  
 		        }
 		        catch (IOException e)  
@@ -215,7 +216,8 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback, Pr
         try
         {  
         	this.udpSocket = new DatagramSocket();  
-            this.address = InetAddress.getByName(ip);  
+            this.address = InetAddress.getByName(ip); 
+            this.port = port;
         }
         catch (SocketException e)
         {  
